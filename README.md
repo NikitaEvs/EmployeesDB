@@ -1,12 +1,12 @@
-# Solution of the first homework for YSDA DB course
+# Solution of the first homework for the YSDA DB course
 
 ## Description
 Implement basic graph operations using relational DBMS. All solutions are in the [main.sql](main.sql) file.
 
 ## Data model
-Data is stored in the adjacency list model. According to [this benchmark](https://explainextended.com/2009/09/24/adjacency-list-vs-nested-sets-postgresql/) it is more efficient to use recursive CTE than nested sets data model.
+Data is stored in the adjacency list model. According to [this benchmark](https://explainextended.com/2009/09/24/adjacency-list-vs-nested-sets-postgresql/), it is more efficient to use recursive CTE than a nested sets data model.
 
-So the schema is as following:
+So the schema is as follows:
 ```sql
 create table if not exists relations
 (
