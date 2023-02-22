@@ -19,5 +19,5 @@ create table if not exists relations
 ## How to run
 - Create a container with PostgreSQL using `docker-compose up -d`.
 - Install postgresql-client-common and postgresql-client-<version>
-- Run queries using psql: `psql -h 0.0.0.0 -p 5432  -U cat -f main.sql` (password: meow)
+- Run queries using psql: `psql -h 0.0.0.0 -p 5432 -U cat -f main.sql` (password: meow)
 
