@@ -7,14 +7,14 @@ Implement basic graph operations using relational DBMS. All solutions are in the
 Data is stored in the adjacency list model. According to [this benchmark](https://explainextended.com/2009/09/24/adjacency-list-vs-nested-sets-postgresql/) it is more efficient to use recursive CTE than nested sets data model.
 
 So the schema is as following:
-```
+```sql
 create table if not exists relations
 (
     id      serial primary key,
     boss_id integer,
     name    text
 );
-```sql
+```
 
 ## How to run
 - Create a container with PostgreSQL using `docker-compose up -d`.
